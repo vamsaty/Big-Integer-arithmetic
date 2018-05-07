@@ -19,12 +19,12 @@ The below functions complete only if the integers are valid.
 # intal_compare(a,b)
 Takes two generic pointers(void* a,void* b) as parameters, which represent valid big integers, then compares the two integers.
 equivalent to :: return (a>b)?1:((a==b)?0:-1)
-/*
+
   Other-wise
   if(a>b)return 1;
   else if(a==b)return 0;
   else return -1;
-*/
+
 
 
 # intal_increment(a)

@@ -9,6 +9,7 @@ The integer is represented using a structure (INTAL-integer of arbritary length)
 The array is used to store the big integer, and its length is stored.
 
 # Operations/Functions
+These are the functions used in the library.
 
 # intal_create(...)
 takes a string(const char*) as parameter. And creates a big integer with that value, removing all the preceding zeros.
@@ -18,34 +19,33 @@ The below functions complete only if the integers are valid.
 
 # intal_compare(a,b)
 Takes two generic pointers(void* a,void* b) as parameters, which represent valid big integers, then compares the two integers.
-equivalent to :: return (a>b)?1:((a==b)?0:-1)
+Equivalent to :: return (a>b)?1:((a==b)?0:-1)
 
-  Other-wise
+  *Other-wise
   if(a>b)return 1;
   else if(a==b)return 0;
-  else return -1;
-
+  else return -1;*
 
 
 # intal_increment(a)
 Takes a generic pointer(void*) as parameter that has to be incremented by 1.
-equivalent to :: a+1
+Equivalent to :: a+1
 
 # intal_decrement(a)
 Takes a generic pointer(void*) as parameter that has to be decremented by 1, decrementing zero gives 0 (as we deal with only non-negative integers).
-equivalent to :: a-1
+Equivalent to :: a-1
 
 # intal_add(a, b)
 Takes two generic pointers(void*) as parameters that have to be added.
-equivalent to :: a+b
+Equivalent to :: a+b
 
 # intal_diff(a, b)
 Takes two generic pointers(void*) as parameters, for which the difference has to be calculated. It returns a non-negative integer.
-equivalent to :: |a-b|
+Equivalent to :: |a-b|
 
 # intal_multiply(a, b)
 Takes two generic pointers(void*) as parameters, that are to be multiplied.
-equivalent to :: a*b
+Equivalent to :: a*b
 
 # intal_divide(a, b)
 Takes two generic pointers(void*) as parameters (dividend,divisor), that are to be multiplied.
